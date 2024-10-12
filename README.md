@@ -1,12 +1,14 @@
-- 👋 Hi, I’m @Destri56
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+Instal-web-server-apache
+Instalasi aplikasi web server root@smkmanusa:~# apt instal apache2
 
-<!---
-Destri56/Destri56 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+root@smkmanusa:~# nano /etc/apache2/sites-available/000-default.conf
+
+ServerAdmin mail.smkmanusa.sch.id
+
+DocumentRoot /var/lib/roundcube
+
+root@smkmanusa:~# service apache2 restart
+
+Pengujian Web server dari sisi Client Windows:Buka web browser dan ketik: 172.30.1.1
+
+Forbidden
